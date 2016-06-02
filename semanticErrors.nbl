@@ -1,0 +1,12 @@
+[
+>> Double declaration
+var a\
+var a\
+
+>> Not declared
+b = c\
+
+>> Wrong types
+var d = 5 / "d"\
+d = 2.5 - "a"\
+]

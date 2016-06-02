@@ -1,0 +1,22 @@
+[
+>> adventure game
+
+cast "Hi! Please type in your name."\
+var name\
+scan name\
+cast "Hello " + name + ". How old are you?"\
+var age\
+scan age\
+if (age < 20) [
+	cast "It seems that you are teenager."\
+] elif (age >= 20 & age < 40) [
+	cast "It seems that you are an adult."\
+] el [
+	cast "It seems that you had a long life."\
+]
+cast "Give me a number."\
+var x\
+scan x\
+var y = x + age\
+cast "In " + x + " years, " + name + " will be " + y + " years old."\
+]

@@ -1,0 +1,22 @@
+[
+	>> Guess the number.
+	cast "Guess the number."\
+
+	var answer = 1 + 2 * 3 / - 4\
+	var flag = true\
+
+	loop (flag) [
+	
+	var input\
+	scan input\
+	
+	if (input == answer) [
+		cast "Correct!"\
+		flag = false\
+	] elif (input < answer) [
+		cast "Higher!"\
+		continue\
+	] el [ cast "Lower!"\ ]
+
+	]
+]
